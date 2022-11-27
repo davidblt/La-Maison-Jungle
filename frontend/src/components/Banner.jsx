@@ -1,16 +1,14 @@
-import React from "react"
-
-const title = "La Maison Jungle"
+import '../styles/Banner.css';
+import logo from '../assets/logo.png';
 
 function Banner() {
-    return (
-			<div>
-				<h1>{title}</h1>,
-				<p>
-					Ici achetez toutes les plantes dont vous avez toujours rêvé 🌵🌱🎍
-				</p>
+	const title = 'La Maison Jungle';
+	return (
+			<div className="lmj-banner">
+				<img src={logo} alt="Logo de La Maison Jungle" className="lmj-logo" />
+				<h1 className="lmj-title">{title}</h1>,
 			</div>
-		);
+	);
 }
 
 export default Banner;
